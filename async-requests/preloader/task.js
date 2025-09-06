@@ -5,7 +5,7 @@ xhr.responseType = "json";
 xhr.onload = () => {
     document.getElementById("loader").classList.remove("loader_active");
     if (xhr.status != 200) {
-        alert("Загрузка не удалась");
+        alert("Загрузка курсов валют не удалась");
     } else {
         printCurrency(xhr.response);
     }
