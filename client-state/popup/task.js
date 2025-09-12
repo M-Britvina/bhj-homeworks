@@ -1,4 +1,4 @@
-    const modal = document.getElementById("subscribe-modal");
+const modal = document.getElementById("subscribe-modal");
 const closeButton = document.querySelector(".modal__close");
 
 document.addEventListener("DOMContentLoaded",

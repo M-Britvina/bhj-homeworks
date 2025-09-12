@@ -5,17 +5,20 @@ document.addEventListener("DOMContentLoaded",
     () => {
         editor.value = localStorage.getItem("text");
     },
-false);
+    false
+);
 
 editor.addEventListener("input",
     () => {
         localStorage.setItem("text", editor.value);
-    }, false
+    },
+    false
 );
 
 clearButton.addEventListener("click",
     () => {
         editor.value = "";
         localStorage.removeItem("text");
-    }, false
+    },
+    false
 );
